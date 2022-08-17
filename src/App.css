@@ -101,6 +101,18 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+::-moz-selection {
+  /* Code for Firefox */
+  color: #ffffff;
+  background: #595959;
+}
+
+::selection {
+  color: #ffffff;
+  background: #595959;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 5px;
@@ -110,17 +122,18 @@ img {
 ::-webkit-scrollbar-track {
   border-radius: 10px;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: 333333; 
+  background: 333333;
   border-radius: 10px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #333333; 
+  background: #333333;
 }
+
 .section {
   padding: 6rem 0 2rem;
 }
@@ -180,13 +193,38 @@ img {
     margin-left: var(--mb-1-5);
     margin-right: var(--mb-1-5);
   }
+
+  .button {
+    padding: 1rem 1.75rem;
+  }
+
+  .button__icon {
+    width: 22px;
+    height: 22px;
+  }
 }
 
-@media screen and (max-width: 768px) {}
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0 0 var(--header-height) 0;
+  }
+
+  .section {
+    padding: 2rem 0 4rem;
+  }
+
+  .section__subtitle {
+    margin-bottom: var(--mb-3);
+  }
+}
 
 @media screen and (max-width: 576px) {}
 
 @media screen and (max-width: 350px) {
+  :root {
+    --big-font-size: 2.25rem;
+  }
+
   .container {
     margin-left: var(--mb-1);
     margin-right: var(--mb-1);
