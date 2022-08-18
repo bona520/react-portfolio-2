@@ -115,7 +115,7 @@ img {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
 }
 
 /* Track */
@@ -125,7 +125,7 @@ img {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: 333333;
+  background: #333333;
   border-radius: 10px;
 }
 
